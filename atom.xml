@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>InkMainHee Blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>InkMainHee Blog</name>
     
   </author>
   
@@ -117,7 +117,7 @@
     <link href="http://yoursite.com/2019/03/21/win10-da-jian-linux-huan-jing-linux-zi-xi-tong/"/>
     <id>http://yoursite.com/2019/03/21/win10-da-jian-linux-huan-jing-linux-zi-xi-tong/</id>
     <published>2019-03-21T05:58:26.000Z</published>
-    <updated>2019-03-21T06:25:39.814Z</updated>
+    <updated>2019-08-06T13:26:30.113Z</updated>
     
     <summary type="html">
     
@@ -179,7 +179,7 @@
     <link href="http://yoursite.com/2019/03/18/centos-da-jian-php-huan-jing/"/>
     <id>http://yoursite.com/2019/03/18/centos-da-jian-php-huan-jing/</id>
     <published>2019-03-18T09:21:00.000Z</published>
-    <updated>2019-03-28T13:43:58.434Z</updated>
+    <updated>2019-08-06T13:26:22.513Z</updated>
     
     <summary type="html">
     
@@ -199,26 +199,6 @@
       <category term="centos" scheme="http://yoursite.com/tags/centos/"/>
     
       <category term="shell" scheme="http://yoursite.com/tags/shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>typora-vue-theme主题介绍</title>
-    <link href="http://yoursite.com/2018/09/07/typora-vue-theme-zhu-ti-jie-shao/"/>
-    <id>http://yoursite.com/2018/09/07/typora-vue-theme-zhu-ti-jie-shao/</id>
-    <published>2018-09-07T01:25:00.000Z</published>
-    <updated>2019-08-06T11:03:53.617Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Markdown" scheme="http://yoursite.com/categories/Markdown/"/>
-    
-    
-      <category term="Typora" scheme="http://yoursite.com/tags/Typora/"/>
-    
-      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
     
   </entry>
   
