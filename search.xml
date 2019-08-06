@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>hexo 创建博客</title>
+      <link href="/2019/08/06/hexo-chuang-jian-bo-ke/"/>
+      <url>/2019/08/06/hexo-chuang-jian-bo-ke/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2019/08/06/hello-world/"/>
       <url>/2019/08/06/hello-world/</url>
@@ -11,6 +24,158 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>文章测试</title>
+      <link href="/2019/08/06/wen-zhang-ce-shi/"/>
+      <url>/2019/08/06/wen-zhang-ce-shi/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Google tutorial</title>
+      <link href="/2019/04/14/google-tutorial/"/>
+      <url>/2019/04/14/google-tutorial/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Tutorial </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> google </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>云服务器搭建宝塔面板</title>
+      <link href="/2019/03/21/yun-fu-wu-qi-da-jian-bao-ta-mian-ban/"/>
+      <url>/2019/03/21/yun-fu-wu-qi-da-jian-bao-ta-mian-ban/</url>
+      
+        <content type="html"><![CDATA[<h1 id="云服务器搭建宝塔"><a href="#云服务器搭建宝塔" class="headerlink" title="云服务器搭建宝塔"></a>云服务器搭建宝塔</h1><h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>一台云服务器 (阿里 腾讯 百度 都行)</p><p>ssh 远程连接工具 或者直接管理服务器也行</p><h2 id="安装要求"><a href="#安装要求" class="headerlink" title="安装要求"></a>安装要求</h2><blockquote><p>安装要求：<br>内存：512M以上，推荐768M以上（纯面板约占系统60M内存）<br>硬盘：100M以上可用硬盘空间（纯面板约占20M磁盘空间）<br>系统：CentOS 7.1+ (Ubuntu16.04+.、Debian9.0+)，确保是干净的操作系统，没有安装过其它环境带的Apache/Nginx/php/MySQL（已有环境不可安装）</p></blockquote><p>centos 下</p><pre class=" language-bash"><code class="language-bash">yum <span class="token function">install</span> -y <span class="token function">wget</span> <span class="token operator">&amp;&amp;</span> <span class="token function">wget</span> -O install.sh \http://download.bt.cn/install/install_6.0.sh <span class="token operator">&amp;&amp;</span> <span class="token function">bash</span> install.sh</code></pre><p>Ubuntu/Deepin安装命令：</p><pre><code>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh\&amp;&amp; sudo bash install.sh</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> 宝塔面板 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>win10搭建Linux环境(linux子系统)</title>
+      <link href="/2019/03/21/win10-da-jian-linux-huan-jing-linux-zi-xi-tong/"/>
+      <url>/2019/03/21/win10-da-jian-linux-huan-jing-linux-zi-xi-tong/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a><center><font size="20px" color="red">Linux</font></center></h1><hr><h5 id="以下文档都是我亲自测试过的除了xampp那块"><a href="#以下文档都是我亲自测试过的除了xampp那块" class="headerlink" title="以下文档都是我亲自测试过的除了xampp那块"></a><font color="blue">以下文档都是我亲自测试过的除了xampp那块</font></h5><h2 id="设置root密码"><a href="#设置root密码" class="headerlink" title="设置root密码"></a><font color="green">设置root密码</font></h2><pre><code>sudo passwd     orsudo passwd root</code></pre><h2 id="切换root身份"><a href="#切换root身份" class="headerlink" title="切换root身份"></a><font color="green">切换root身份</font></h2><pre><code>su -    or su root</code></pre><h2 id="配置-ssh"><a href="#配置-ssh" class="headerlink" title="配置 ssh"></a><font color="green">配置 ssh</font></h2><h5 id="以root身份输入"><a href="#以root身份输入" class="headerlink" title="以root身份输入"></a>以root身份输入</h5><pre><code>service ssh start#如果出现如下情况#Starting OpenBSD Secure Shell server sshd #Could not load host key: /etc/ssh/ssh_host_rsa_key#Could not load host key: /etc/ssh/ssh_host_ecdsa_key#Could not load host key: /etc/ssh/ssh_host_ed25519_key#那么就需要重新 生成keydpkg-reconfigure openssh-server#之后再运行service ssh start#检测ssh状态service ssh status#如果连接出现(server sent publickey)#该问题是由于ssh链接未允许远程密码认证导致的#通过管理控制台进入系统，cat 查看 /etc/ssh/sshd_config配置文件中是否包含以下配置 PasswordAuthentication no #通过vim编辑器将该参数改成yes，如下 PasswordAuthentication yes #清除keyssh-keygen -R ip#登录时，如果root用户不能登录#通过管理控制台进入系统，cat 查看 /etc/ssh/sshd_config配置文件中是否包含以下配置 PermitRootLogin no #通过vim编辑器将该参数改成yes，如下 PermitRootLogin yes 保存，然后重启ssh服务 service sshd restart#不要忘了，还要配置防火墙开启端口才能被其他PC访问#打开 Win10 防火墙设置#(可以通过右下角有个向上的箭头点击盾牌快速进入面板)#Windows Defender 安全中心,点击下方的高级设置#选择左侧入站规则 然后点击右侧 新建规则 #选择 端口 -&gt; tcp -&gt; 特定端口 -&gt; 填入刚刚设置的 Port 默认 22 -&gt; 允许连接 -&gt; 提交#连接的网络根据你本地的网络连接情况选择，搞不清楚就公用、专用全选好了，端口添加后即可正常访问了，现在可以通过XShell 或其他终端连接试试了</code></pre><p>如果使用Android手机，推荐看看这篇文章安装APP 即可操作<br><a href="https://blog.csdn.net/zhouzme/article/details/81084661" target="_blank" rel="noopener">https://blog.csdn.net/zhouzme/article/details/81084661</a></p><h2 id="配置-FTP"><a href="#配置-FTP" class="headerlink" title="配置 FTP"></a><font color="green">配置 FTP</font></h2><p>首先安装ftp</p><pre><code>#更新本地源# 编辑源sudo vim /etc/apt/sources.list# 修改为deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiversedeb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiversedeb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse # 更新sudo apt-get updatesudo apt-get dist-upgrade#安装ftpsudo apt-get -y install vsftpd</code></pre><p>如果说出现</p><pre><code>Reading package lists... DoneBuilding dependency treeReading state information... Donevsftpd is already the newest version (3.0.3-9build1).The following package was automatically installed and is no longer required:  libfreetype6Use &#39;sudo apt autoremove&#39; to remove it.0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.</code></pre><p>说明你电脑已经安装过了或者已经是最新版</p><pre><code>#启动ftpsudo service vsftpd start#修改配置文件 sudo vim /etc/vsftpd.conf    #开启监听    listen YES    #是否允许用户匿名登录    anonymous_enable=YES    #允许本地用户登录    local_enable=YES    #设置匿名用户登录的目录    anon_root=/home/moshang/anonFtp/    #实名用户拥有写入权限    write_enable=YES    #设置本地掩码为022    local_umask=022    #允许匿名用户上传数据    anon_upload_enable=YES    #匿名用户可以创建目录    anon_mkdir_write_enable=YES#重启服务器sudo service vsftpd restart   </code></pre><p>最好使用匿名用户登录，不要轻易暴露你的密码</p><pre><code>#命令行下ftp serverip#匿名用户 (只限操作自己的目录)user:anonymouspasswd:直接回车#实名用户(可以操作/目录和其他目录)user:自己的用户名passwd:自己的密码#上传文件put file#下载文件get file</code></pre><p><del>#创建FTP用户组ftp-users<br>groupadd ftp-users</del></p><p><del>#创建用户组目录ftp-docs<br>mkdir /home/ftp-docs</del></p><p><del>#修改权限<br>chmod -R 750 /home/ftp-docs</del></p><p><del>#750组只能读不能写，要组能写，请改成770或760</del></p><p><del>指定文件夹归属用户和用户组<br>chown root:ftp-users /home/ftp-docs</del></p><p><del>#添加FTP用户并为他们设置缺省目录<br>useradd -g ftp-users -d /home/ftp-docs</del> </p><p><del>#设置密码passwd user1</del></p><h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a><font color="green" size="10px">配置环境</font></h2><h3 id="Lampp"><a href="#Lampp" class="headerlink" title="Lampp"></a><font color="green" size="8px">Lampp</font></h3><p>站点域名的话就不要想了，没法用，建立两个项目除非分配端口</p><blockquote><p><font size="6px">安装apache</font></p><pre><code>sudo apt-get -y install apache2</code></pre><p>启动apache2</p><pre><code>sudo service apache2 start</code></pre><p>命令行访问</p><pre><code>curl server ip //curl 192.168.1.109</code></pre></blockquote><p>#如果有返回html标签的数据，说明可以访问了</p><pre><code>&gt;&lt;font size=&quot;6px&quot;&gt;安装mysql</code></pre><p>sudo apt install mysql-server-5.7</p><p>#回车后会让你设置mysql密码</p><pre><code>&gt;启动mysql</code></pre><p>service mysql start<br>如果出现<br>No directory, logging in with HOME=/</p><p>#运行<br>sudo service mysql stop</p><p>sudo usermod -d /var/lib/mysql/ mysql<br>service mysql start</p><pre><code>&gt;登录mysql</code></pre><p>mysql -uroot -p</p><p>#输入设置的密码登录</p><pre><code>&gt;如果说用navicat或者小海豚连接时连不上</code></pre><p>#原因是mysql没有开启所有人可访问权限</p><p>#解决方法<br>mysql -uroot –p<br>mysql&gt;use mysql;<br>mysql&gt;update user set host = ‘%’ where user = ‘root’;<br>mysql&gt;select host, user from user;<br>mysql&gt;FLUSH PRIVILEGES;<br>修改MySQL的配置文件/etc/mysql/mysql.conf.d/my.cnf，因为默认3306端口只允许本地访问的，注释掉这行</p><pre><code>&gt;mysql无法启动</code></pre><p>ps -ef | grep mysql //查看正在运行的服务<br>kill -9 [pid]       //停止运行的服务 </p><pre><code>&gt;彻底删除mysql(对mysql配置文件的改动超出自己的能力范围时)</code></pre><p>#首先在终端中查看MySQL的依赖项:<br>dpkg –list|grep mysql</p><pre><code></code></pre><p>#卸载:<br>sudo apt-get remove mysql-common</p><pre><code></code></pre><p>#卸载:<br>sudo apt-get autoremove –purge mysql-server-5.7</p><pre><code></code></pre><p>#清除残留数据:<br>dpkg -l|grep ^rc|awk ‘{print$2}’|sudo xargs dpkg -P</p><pre><code></code></pre><p>#再次查看MySQL的剩余依赖项:<br>dpkg –list|grep mysql</p><pre><code></code></pre><p>继续删除剩余依赖项，如：sudo apt-get autoremove –purge –name–</p><pre><code></code></pre><p>#至此已经没有了MySQL的依赖项，彻底删除，Good Luck</p><pre><code>&gt;&lt;font size=&quot;6px&quot;&gt;安装php</code></pre><p>检测一下本地是否存在php环境<br>php -v </p><p>#出现php版本号的话，卸载</p><pre><code>&gt;一、删除php的相关包及配置</code></pre><p>sudo apt-get autoremove php7*</p><pre><code>&gt;二、删除关联</code></pre><p>sudo find /etc -name “<em>php</em>“ |xargs  rm -rf </p><pre><code>&gt;三、清除dept列表</code></pre><p>sudo apt purge <code>dpkg -l | grep php| awk &#39;{print $2}&#39; |tr &quot;\n&quot; &quot; &quot;</code></p><pre><code>&gt;四、检查是否卸载干净（无返回就是卸载完成）</code></pre><p>dpkg -l | grep php7.0</p><pre><code>&gt;开始安装php</code></pre><p>sudo apt install php-fpm php-mysql</p><pre><code>&gt;查看php版本</code></pre><p>php -v</p><pre><code>&gt;安装所需依赖</code></pre><p>sudo apt-get install libapache2-mod-php<br>sudo a2enmod<br>php + 安装的版本号</p><pre><code>```shellcd /var/www/htmltouch phpinfo.phpvim phpinfo.php键盘i输入&lt;?php phpinfo();?&gt;键盘escshift + 英文:wq保存退出浏览器输入 服务器ip/phpinfo.php访问PHP installation complete</code></pre><h3 id="Xampp"><a href="#Xampp" class="headerlink" title="Xampp"></a><font color="green" size="8px">Xampp</font></h3><blockquote><p><font size="6px">配置xampp</font></p><pre><code></code></pre></blockquote><p>#下载文件<br>wget <a href="https://www.apachefriends.org/xampp-files/7.3.0/xampp-linux-x64-7.3.0-0-installer.run" target="_blank" rel="noopener">https://www.apachefriends.org/xampp-files/7.3.0/xampp-linux-x64-7.3.0-0-installer.run</a></p><p>chmod 770 ./xampp-linux-x64-7.3.0-0-installer.run //修改权限加入执行权限</p><p>./xampp-linux-x64-7.3.0-0-installer.run //运行<br>Xampp installation complete</p><pre><code>&gt;&lt;font size =&quot;4px&quot;&gt;各配置文件目录：&gt;Apache文档根目录：/opt/lampp/htdocs/&gt;Apache配置文件：/opt/lampp/etc/httpd.conf&gt;MySQL配置文件：/opt/lampp/etc/my.cnf&gt;PHP配置文件：/opt/lampp/etc/php.ini&gt;ProFTPD配置文件：/opt/lampp/etc/proftpd.conf&gt;PHPMyadmin配置文件：/opt/lampp/phpmyadmin/config.inc.php&gt;&lt;font size =&quot;4px&quot;&gt;常用XAMPP命令（在终端以root输入）：&gt;启动/停止/重启Apache：</code></pre><p>/opt/lampp/lampp start/stop/restart(包括启动/停止/重启了mysql,proftpd)</p><pre><code>&gt;安全设置：/opt/lampp/lampp security&gt;使用php版本/查看版本：</code></pre><p>/opt/lampp/lampp php4(5)/phpstatus</p><pre><code>&gt;只启动和停止Apache：</code></pre><p>/opt/lampp/lampp startapache/stopapache</p><pre><code>&gt;只启动和停止MySQL：</code></pre><p>/opt/lampp/lampp startmysql/stopmysql</p><pre><code>&gt;只启动和停止ProFTPD服务器：</code></pre><p>/opt/lampp/lampp startftp/stopftp</p><pre><code>&gt;启动和停止Apache的SSL支持：</code></pre><p>/opt/lampp/lampp startssl/stopssl</p><pre><code>&gt;随系统自启动：</code></pre><p>ln –s /opt/lampp/lampp/etc/rc.d/rc3.d/S99lampp</p><p>ln –s /opt/lampp/lampp/etc/rc.d/rc4.d/S99lampp</p><p>ln –s /opt/lampp/lampp/etc/rc.d/rc5.d/S99lampp</p><pre><code>&gt;取消自启动：</code></pre><p>ln –s /opt/lampp/lampp K01lampp</p><pre><code>&gt;卸载XAMPP：</code></pre><p>rm –rf /opt/lampp</p><pre><code>--------------------- ~~&lt;font color=&quot;green&quot;&gt;配置docker&lt;/font&gt;~~</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+          <category> ubuntu </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> win10 </tag>
+            
+            <tag> ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo + github搭建个人博客</title>
+      <link href="/2019/03/21/hexo-github-da-jian-ge-ren-bo-ke/"/>
+      <url>/2019/03/21/hexo-github-da-jian-ge-ren-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<h1 id="github-hexo搭建博客"><a href="#github-hexo搭建博客" class="headerlink" title="github + hexo搭建博客"></a>github + hexo搭建博客</h1><h2 id="环境及工具"><a href="#环境及工具" class="headerlink" title="环境及工具"></a>环境及工具</h2><pre><code>git  nodejs hexo </code></pre><h3 id="1-1-安装git"><a href="#1-1-安装git" class="headerlink" title="1.1 安装git"></a>1.1 安装git</h3><pre><code>[git下载](https://www.git-scm.com/download/)</code></pre><h3 id="1-2-安装nodejs"><a href="#1-2-安装nodejs" class="headerlink" title="1.2 安装nodejs"></a>1.2 安装nodejs</h3><pre><code>[nodejs](http://nodejs.cn/download/)wget https://nodejs.org/dist/v9.3.0/node-v9.3.0-linux-x64.tar.xzxz -d node-v9.3.0-linux-x64.tar.xz</code></pre><p>tar -xf node-v9.3.0-linux-x64.tar</p><p>ln -s ~/node-v9.3.0-linux-x64/bin/node /usr/bin/node<br>ln -s ~/node-v9.3.0-linux-x64/bin/npm /usr/bin/npm</p><p>测试</p><p>node -v<br>npm -v</p><h3 id="1-3安装hexo-使用下面的命令来下载和安装-Hexo"><a href="#1-3安装hexo-使用下面的命令来下载和安装-Hexo" class="headerlink" title="1.3安装hexo 使用下面的命令来下载和安装 Hexo"></a>1.3安装hexo 使用下面的命令来下载和安装 Hexo</h3><pre><code>npm install hexo-cli -g//或者npm install hexo -g --no-optional</code></pre><blockquote><p>这里 -g 代表全局安装，这样 hexo 包将放在 /usr/local/lib/node_modules (Windows 位于 ~/AppData/Roaming/npm/node_modules)，不带的话是本地安装，将放在当前目录的 node_modules 下</p></blockquote><h3 id="1-4-注册github账号"><a href="#1-4-注册github账号" class="headerlink" title="1.4 注册github账号"></a>1.4 注册github账号</h3><p>   <a href="https://github.com/signup" target="_blank" rel="noopener">https://github.com/signup</a></p><h3 id="1-5-创建github仓库"><a href="#1-5-创建github仓库" class="headerlink" title="1.5 创建github仓库"></a>1.5 创建github仓库</h3><blockquote><p>   以自己的用户名 + github.io 来命名 </p></blockquote><h2 id="二、在本地创建博客"><a href="#二、在本地创建博客" class="headerlink" title="二、在本地创建博客"></a>二、在本地创建博客</h2><blockquote><p>(在之后hexo的命令我都用的简写)</p></blockquote><h3 id="1-初始化博客环境"><a href="#1-初始化博客环境" class="headerlink" title="1. 初始化博客环境"></a>1. 初始化博客环境</h3><p>首先建立一个文件夹 作为博客的根目录 然后进入该目录在命令行中执行</p><pre><code>// 初始化hexo环境hexo init// 使用npm安装所需的组件npm install</code></pre><h3 id="2-发表一篇新文章"><a href="#2-发表一篇新文章" class="headerlink" title="2. 发表一篇新文章"></a>2. 发表一篇新文章</h3><blockquote><p>我们可以使用下面命令来创建一篇新的文章，或者直接将文章放到 &lt;博客根目录&gt;/source/_posts 目录里</p></blockquote><pre><code>hexo new  &quot;文章标题&quot;</code></pre><h3 id="3-生成博客静态网页"><a href="#3-生成博客静态网页" class="headerlink" title="3. 生成博客静态网页"></a>3. 生成博客静态网页</h3><blockquote><p>使用下面命令将 source 文件生成静态网页，生成的文件放在<blog_root>/public 目录下</blog_root></p></blockquote><pre><code>hexo  g</code></pre><h3 id="4-将网页发布到server端"><a href="#4-将网页发布到server端" class="headerlink" title="4. 将网页发布到server端"></a>4. 将网页发布到server端</h3><pre><code>hexo s</code></pre><blockquote><p>最后我们就可以通过浏览器访问服务器网页。这里我们没配置server信息，所以server其实是本机（<a href="http://localhost:4000）" target="_blank" rel="noopener">http://localhost:4000）</a></p></blockquote><h2 id="三、部署到码云"><a href="#三、部署到码云" class="headerlink" title="三、部署到码云"></a>三、部署到码云</h2><blockquote><p>首先在全局配置文件 _config.yml 里的 deploy 部分进行配置，其中 repo为你的github pages对应的仓库地址（yourname.github.io )：</p></blockquote><p>需要安装一个git插件</p><pre><code>deploy:  type: git  repo: https://.........git  branch: master</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+          <category> 博客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>centos搭建PHP环境</title>
+      <link href="/2019/03/18/centos-da-jian-php-huan-jing/"/>
+      <url>/2019/03/18/centos-da-jian-php-huan-jing/</url>
+      
+        <content type="html"><![CDATA[<h1 id="centos上搭建php开发环境"><a href="#centos上搭建php开发环境" class="headerlink" title="centos上搭建php开发环境"></a>centos上搭建php开发环境</h1><h2 id="安装apache"><a href="#安装apache" class="headerlink" title="安装apache"></a>安装apache</h2><pre class=" language-bash"><code class="language-bash">yum -y <span class="token function">install</span> httpd</code></pre><h2 id="开启apache服务"><a href="#开启apache服务" class="headerlink" title="开启apache服务"></a>开启apache服务</h2><pre class=" language-bash"><code class="language-bash">systemctl start httpd.service</code></pre><h2 id="设置apache开机启动"><a href="#设置apache开机启动" class="headerlink" title="设置apache开机启动"></a>设置apache开机启动</h2><pre class=" language-bash"><code class="language-bash">systemctl <span class="token function">enable</span> httpd.service</code></pre><h2 id="安装php"><a href="#安装php" class="headerlink" title="安装php"></a>安装php</h2><pre class=" language-bash"><code class="language-bash">yum -y <span class="token function">install</span> php</code></pre><h2 id="重启apache服务"><a href="#重启apache服务" class="headerlink" title="重启apache服务"></a>重启apache服务</h2><pre class=" language-bash"><code class="language-bash">systemctl restart httpd 或者 systemctl restart httpd.service</code></pre><p>然后，你可以写一个php文件在浏览器中运行一下了;</p><pre class=" language-bash"><code class="language-bash"><span class="token function">vi</span> /var/www/html/info.php</code></pre><pre class=" language-php"><code class="language-php"><span class="token delimiter">&lt;?php</span> <span class="token function">phpinfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token delimiter">?></span></code></pre><p>然后，在自己电脑浏览器输入 192.168.1.1/info.php<br>运行，会出现php的一些信息</p><h2 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h2><pre class=" language-bash"><code class="language-bash">yum -y <span class="token function">install</span> mariadb-service mariadb</code></pre><h2 id="开启mysql服务"><a href="#开启mysql服务" class="headerlink" title="开启mysql服务"></a>开启mysql服务</h2><pre class=" language-bash"><code class="language-bash">systemctl start mariadb.service</code></pre><h2 id="设置开机启动MySQL服务"><a href="#设置开机启动MySQL服务" class="headerlink" title="设置开机启动MySQL服务"></a>设置开机启动MySQL服务</h2><pre class=" language-bash"><code class="language-bash">systemctl <span class="token function">enable</span> mariadb.service</code></pre><h2 id="设置root帐户的密码"><a href="#设置root帐户的密码" class="headerlink" title="设置root帐户的密码"></a>设置root帐户的密码</h2><pre class=" language-bash"><code class="language-bash">mysql_secure_installation</code></pre><blockquote><p>然后会出现一串东西，可以仔细读一下，如果你懒得读，就在提示出来的时候，按Enter就好了，让你设置密码的时候，你就输入你想要的密码就行，然后继续在让你选择y/n是，Enter就好了；当一切结束的时候，你可以输入</p></blockquote><pre class=" language-bash"><code class="language-bash">mysql -uroot -p</code></pre><p>验证一下</p><h2 id="将PHP和MySQL关联起来"><a href="#将PHP和MySQL关联起来" class="headerlink" title="将PHP和MySQL关联起来"></a>将PHP和MySQL关联起来</h2><pre class=" language-bash"><code class="language-bash">yum search php</code></pre><p>yum -y install php-mysql</p><h2 id="安装常用的PHP模块"><a href="#安装常用的PHP模块" class="headerlink" title="安装常用的PHP模块"></a>安装常用的PHP模块</h2><pre class=" language-bash"><code class="language-bash">yum -y <span class="token function">install</span> php-gd php-ldap php-odbc php-pear php-xml php-xmlrpc php-mbstring php-snmp php-soap curl curl-devel</code></pre><h2 id="重启apache服务-1"><a href="#重启apache服务-1" class="headerlink" title="重启apache服务"></a>重启apache服务</h2><pre class=" language-bash"><code class="language-bash">systemctl restart httpd.service</code></pre><blockquote><p>然后，再次在浏览器中运行info.php，你会看到安装的模块的信息；<br>至此，LAMP环境就搭建好了。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> centos </tag>
+            
+            <tag> shell </tag>
+            
+        </tags>
       
     </entry>
     

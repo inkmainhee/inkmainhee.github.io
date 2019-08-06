@@ -4,8 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="typora-vue-theme主题介绍, Hexo">
-    <meta name="description" content="typora-vue-theme主题介绍 | Hexo">
+    <meta name="keywords" content="win10搭建Linux环境(linux子系统), Hexo">
+    <meta name="description" content="Linux
+以下文档都是我亲自测试过的除了xampp那块设置root密码sudo passwd 
+    or
+sudo passwd root切换root身份su -
+    or 
+su root配置 ssh以root身份输入servi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>typora-vue-theme主题介绍 | Hexo</title>
+    <title>win10搭建Linux环境(linux子系统) | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -260,13 +265,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/source/images/xxx.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        typora-vue-theme主题介绍
+                        win10搭建Linux环境(linux子系统)
                     </div>
                 </div>
             </div>
@@ -276,10 +281,99 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -288,12 +382,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Typora/" target="_blank">
-                                <span class="chip bg-color">Typora</span>
+                            <a href="/tags/linux/" target="_blank">
+                                <span class="chip bg-color">linux</span>
                             </a>
                         
-                            <a href="/tags/Markdown/" target="_blank">
-                                <span class="chip bg-color">Markdown</span>
+                            <a href="/tags/win10/" target="_blank">
+                                <span class="chip bg-color">win10</span>
+                            </a>
+                        
+                            <a href="/tags/ubuntu/" target="_blank">
+                                <span class="chip bg-color">ubuntu</span>
                             </a>
                         
                     </div>
@@ -304,8 +402,12 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Markdown/" class="post-category" target="_blank">
-                                Markdown
+                            <a href="/categories/linux/" class="post-category" target="_blank">
+                                linux
+                            </a>
+                        
+                            <a href="/categories/linux/ubuntu/" class="post-category" target="_blank">
+                                ubuntu
                             </a>
                         
                     </div>
@@ -316,21 +418,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-09-07
+                    2019-03-21
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        0
+                        1.9k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        8 分
                     </div>
                     
                 
@@ -346,7 +448,210 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a><center><font size="20px" color="red">Linux</font></center></h1><hr>
+<h5 id="以下文档都是我亲自测试过的除了xampp那块"><a href="#以下文档都是我亲自测试过的除了xampp那块" class="headerlink" title="以下文档都是我亲自测试过的除了xampp那块"></a><font color="blue">以下文档都是我亲自测试过的除了xampp那块</font></h5><h2 id="设置root密码"><a href="#设置root密码" class="headerlink" title="设置root密码"></a><font color="green">设置root密码</font></h2><pre><code>sudo passwd 
+    or
+sudo passwd root</code></pre><h2 id="切换root身份"><a href="#切换root身份" class="headerlink" title="切换root身份"></a><font color="green">切换root身份</font></h2><pre><code>su -
+    or 
+su root</code></pre><h2 id="配置-ssh"><a href="#配置-ssh" class="headerlink" title="配置 ssh"></a><font color="green">配置 ssh</font></h2><h5 id="以root身份输入"><a href="#以root身份输入" class="headerlink" title="以root身份输入"></a>以root身份输入</h5><pre><code>service ssh start
+
+#如果出现如下情况
+#Starting OpenBSD Secure Shell server sshd 
+#Could not load host key: /etc/ssh/ssh_host_rsa_key
+#Could not load host key: /etc/ssh/ssh_host_ecdsa_key
+#Could not load host key: /etc/ssh/ssh_host_ed25519_key
+
+#那么就需要重新 生成key
+dpkg-reconfigure openssh-server
+
+#之后再运行
+service ssh start
+
+#检测ssh状态
+service ssh status
+
+#如果连接出现(server sent publickey)
+#该问题是由于ssh链接未允许远程密码认证导致的
+#通过管理控制台进入系统，cat 查看 /etc/ssh/sshd_config配置文件中是否包含以下配置 
+PasswordAuthentication no 
+#通过vim编辑器将该参数改成yes，如下 
+PasswordAuthentication yes 
+#清除key
+ssh-keygen -R ip
+#登录时，如果root用户不能登录
+#通过管理控制台进入系统，cat 查看 /etc/ssh/sshd_config配置文件中是否包含以下配置 
+PermitRootLogin no 
+#通过vim编辑器将该参数改成yes，如下 
+PermitRootLogin yes 
+保存，然后重启ssh服务 
+service sshd restart
+#不要忘了，还要配置防火墙开启端口才能被其他PC访问
+#打开 Win10 防火墙设置
+#(可以通过右下角有个向上的箭头点击盾牌快速进入面板)
+#Windows Defender 安全中心,点击下方的高级设置
+#选择左侧入站规则 然后点击右侧 新建规则 
+
+#选择 端口 -&gt; tcp -&gt; 特定端口 -&gt; 填入刚刚设置的 Port 默认 22 -&gt; 允许连接 -&gt; 提交
+#连接的网络根据你本地的网络连接情况选择，搞不清楚就公用、专用全选好了，端口添加后即可正常访问了，现在可以通过XShell 或其他终端连接试试了
+</code></pre><p>如果使用Android手机，推荐看看这篇文章安装APP 即可操作<br><a href="https://blog.csdn.net/zhouzme/article/details/81084661" target="_blank" rel="noopener">https://blog.csdn.net/zhouzme/article/details/81084661</a></p>
+<h2 id="配置-FTP"><a href="#配置-FTP" class="headerlink" title="配置 FTP"></a><font color="green">配置 FTP</font></h2><p>首先安装ftp</p>
+<pre><code>#更新本地源
+# 编辑源
+sudo vim /etc/apt/sources.list
+# 修改为
+deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse 
+# 更新
+sudo apt-get update
+sudo apt-get dist-upgrade
+#安装ftp
+sudo apt-get -y install vsftpd</code></pre><p>如果说出现</p>
+<pre><code>Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+vsftpd is already the newest version (3.0.3-9build1).
+The following package was automatically installed and is no longer required:
+  libfreetype6
+Use &#39;sudo apt autoremove&#39; to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.</code></pre><p>说明你电脑已经安装过了或者已经是最新版</p>
+<pre><code>#启动ftp
+sudo service vsftpd start
+
+#修改配置文件 
+sudo vim /etc/vsftpd.conf
+
+    #开启监听
+    listen YES
+    #是否允许用户匿名登录
+    anonymous_enable=YES
+    #允许本地用户登录
+    local_enable=YES
+    #设置匿名用户登录的目录
+    anon_root=/home/moshang/anonFtp/
+    #实名用户拥有写入权限
+    write_enable=YES
+    #设置本地掩码为022
+    local_umask=022
+    #允许匿名用户上传数据
+    anon_upload_enable=YES
+    #匿名用户可以创建目录
+    anon_mkdir_write_enable=YES
+#重启服务器
+sudo service vsftpd restart   
+</code></pre><p>最好使用匿名用户登录，不要轻易暴露你的密码</p>
+<pre><code>#命令行下
+ftp serverip
+
+#匿名用户 (只限操作自己的目录)
+user:anonymous
+passwd:直接回车
+#实名用户(可以操作/目录和其他目录)
+user:自己的用户名
+passwd:自己的密码
+#上传文件
+put file
+
+#下载文件
+get file</code></pre><p><del>#创建FTP用户组ftp-users<br>groupadd ftp-users</del></p>
+<p><del>#创建用户组目录ftp-docs<br>mkdir /home/ftp-docs</del></p>
+<p><del>#修改权限<br>chmod -R 750 /home/ftp-docs</del></p>
+<p><del>#750组只能读不能写，要组能写，请改成770或760</del></p>
+<p><del>指定文件夹归属用户和用户组<br>chown root:ftp-users /home/ftp-docs</del></p>
+<p><del>#添加FTP用户并为他们设置缺省目录<br>useradd -g ftp-users -d /home/ftp-docs</del> </p>
+<p><del>#设置密码passwd user1</del></p>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a><font color="green" size="10px">配置环境</font></h2><h3 id="Lampp"><a href="#Lampp" class="headerlink" title="Lampp"></a><font color="green" size="8px">Lampp</font></h3><p>站点域名的话就不要想了，没法用，建立两个项目除非分配端口</p>
+<blockquote>
+<p><font size="6px">安装apache</font></p>
+<pre><code>sudo apt-get -y install apache2</code></pre><p>启动apache2</p>
+<pre><code>sudo service apache2 start</code></pre><p>命令行访问</p>
+<pre><code>curl server ip //curl 192.168.1.109</code></pre></blockquote>
+<p>#如果有返回html标签的数据，说明可以访问了</p>
+<pre><code>&gt;&lt;font size=&quot;6px&quot;&gt;安装mysql</code></pre><p>sudo apt install mysql-server-5.7</p>
+<p>#回车后会让你设置mysql密码</p>
+<pre><code>&gt;启动mysql</code></pre><p>service mysql start<br>如果出现<br>No directory, logging in with HOME=/</p>
+<p>#运行<br>sudo service mysql stop</p>
+<p>sudo usermod -d /var/lib/mysql/ mysql<br>service mysql start</p>
+<pre><code>&gt;登录mysql</code></pre><p>mysql -uroot -p</p>
+<p>#输入设置的密码登录</p>
+<pre><code>&gt;如果说用navicat或者小海豚连接时连不上</code></pre><p>#原因是mysql没有开启所有人可访问权限</p>
+<p>#解决方法<br>mysql -uroot –p<br>mysql&gt;use mysql;<br>mysql&gt;update user set host = ‘%’ where user = ‘root’;<br>mysql&gt;select host, user from user;<br>mysql&gt;FLUSH PRIVILEGES;<br>修改MySQL的配置文件/etc/mysql/mysql.conf.d/my.cnf，因为默认3306端口只允许本地访问的，注释掉这行</p>
+<pre><code>&gt;mysql无法启动</code></pre><p>ps -ef | grep mysql //查看正在运行的服务<br>kill -9 [pid]       //停止运行的服务 </p>
+<pre><code>&gt;彻底删除mysql(对mysql配置文件的改动超出自己的能力范围时)
+</code></pre><p>#首先在终端中查看MySQL的依赖项:<br>dpkg –list|grep mysql</p>
+<pre><code></code></pre><p>#卸载:<br>sudo apt-get remove mysql-common</p>
+<pre><code></code></pre><p>#卸载:<br>sudo apt-get autoremove –purge mysql-server-5.7</p>
+<pre><code></code></pre><p>#清除残留数据:<br>dpkg -l|grep ^rc|awk ‘{print$2}’|sudo xargs dpkg -P</p>
+<pre><code></code></pre><p>#再次查看MySQL的剩余依赖项:<br>dpkg –list|grep mysql</p>
+<pre><code></code></pre><p>继续删除剩余依赖项，如：sudo apt-get autoremove –purge –name–</p>
+<pre><code></code></pre><p>#至此已经没有了MySQL的依赖项，彻底删除，Good Luck</p>
+<pre><code>&gt;&lt;font size=&quot;6px&quot;&gt;安装php</code></pre><p>检测一下本地是否存在php环境<br>php -v </p>
+<p>#出现php版本号的话，卸载</p>
+<pre><code>&gt;一、删除php的相关包及配置</code></pre><p>sudo apt-get autoremove php7*</p>
+<pre><code>&gt;二、删除关联</code></pre><p>sudo find /etc -name “<em>php</em>“ |xargs  rm -rf </p>
+<pre><code>&gt;三、清除dept列表</code></pre><p>sudo apt purge <code>dpkg -l | grep php| awk &#39;{print $2}&#39; |tr &quot;\n&quot; &quot; &quot;</code></p>
+<pre><code>&gt;四、检查是否卸载干净（无返回就是卸载完成）</code></pre><p>dpkg -l | grep php7.0</p>
+<pre><code>&gt;开始安装php</code></pre><p>sudo apt install php-fpm php-mysql</p>
+<pre><code>&gt;查看php版本</code></pre><p>php -v</p>
+<pre><code>&gt;安装所需依赖</code></pre><p>sudo apt-get install libapache2-mod-php<br>sudo a2enmod<br>php + 安装的版本号</p>
+<pre><code>```shell
+cd /var/www/html
+touch phpinfo.php
+vim phpinfo.php
+键盘i
+输入&lt;?php phpinfo();?&gt;
+键盘esc
+shift + 英文:wq
+保存退出
+
+浏览器输入 服务器ip/phpinfo.php访问
+
+PHP installation complete</code></pre><h3 id="Xampp"><a href="#Xampp" class="headerlink" title="Xampp"></a><font color="green" size="8px">Xampp</font></h3><blockquote>
+<p><font size="6px">配置xampp</font></p>
+<pre><code></code></pre></blockquote>
+<p>#下载文件<br>wget <a href="https://www.apachefriends.org/xampp-files/7.3.0/xampp-linux-x64-7.3.0-0-installer.run" target="_blank" rel="noopener">https://www.apachefriends.org/xampp-files/7.3.0/xampp-linux-x64-7.3.0-0-installer.run</a></p>
+<p>chmod 770 ./xampp-linux-x64-7.3.0-0-installer.run //修改权限加入执行权限</p>
+<p>./xampp-linux-x64-7.3.0-0-installer.run //运行<br>Xampp installation complete</p>
+<pre><code>&gt;&lt;font size =&quot;4px&quot;&gt;各配置文件目录：
+
+&gt;Apache文档根目录：/opt/lampp/htdocs/
+
+&gt;Apache配置文件：/opt/lampp/etc/httpd.conf
+
+&gt;MySQL配置文件：/opt/lampp/etc/my.cnf
+
+&gt;PHP配置文件：/opt/lampp/etc/php.ini
+
+&gt;ProFTPD配置文件：/opt/lampp/etc/proftpd.conf
+
+&gt;PHPMyadmin配置文件：/opt/lampp/phpmyadmin/config.inc.php
+
+&gt;&lt;font size =&quot;4px&quot;&gt;常用XAMPP命令（在终端以root输入）：
+
+&gt;启动/停止/重启Apache：</code></pre><p>/opt/lampp/lampp start/stop/restart(包括启动/停止/重启了mysql,proftpd)</p>
+<pre><code>
+&gt;安全设置：/opt/lampp/lampp security
+
+&gt;使用php版本/查看版本：</code></pre><p>/opt/lampp/lampp php4(5)/phpstatus</p>
+<pre><code>&gt;只启动和停止Apache：</code></pre><p>/opt/lampp/lampp startapache/stopapache</p>
+<pre><code>&gt;只启动和停止MySQL：</code></pre><p>/opt/lampp/lampp startmysql/stopmysql</p>
+<pre><code>&gt;只启动和停止ProFTPD服务器：</code></pre><p>/opt/lampp/lampp startftp/stopftp</p>
+<pre><code>&gt;启动和停止Apache的SSL支持：</code></pre><p>/opt/lampp/lampp startssl/stopssl</p>
+<pre><code>
+&gt;随系统自启动：</code></pre><p>ln –s /opt/lampp/lampp/etc/rc.d/rc3.d/S99lampp</p>
+<p>ln –s /opt/lampp/lampp/etc/rc.d/rc4.d/S99lampp</p>
+<p>ln –s /opt/lampp/lampp/etc/rc.d/rc5.d/S99lampp</p>
+<pre><code>
+&gt;取消自启动：</code></pre><p>ln –s /opt/lampp/lampp K01lampp</p>
+<pre><code>
+&gt;卸载XAMPP：</code></pre><p>rm –rf /opt/lampp</p>
+<pre><code>
+--------------------- 
+
+
+
+~~&lt;font color=&quot;green&quot;&gt;配置docker&lt;/font&gt;~~
+</code></pre>
             </div>
             <hr/>
 
@@ -504,11 +809,11 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《typora-vue-theme主题介绍》
+                    《win10搭建Linux环境(linux子系统)》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/09/07/typora-vue-theme-zhu-ti-jie-shao/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/03/21/win10-da-jian-linux-huan-jing-linux-zi-xi-tong/" property="cc:attributionName"
                rel="cc:attributionURL">
-                赵奇
+                John Doe
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
                 知识共享署名 4.0 国际许可协议
@@ -550,26 +855,27 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/03/18/centos-da-jian-php-huan-jing/">
+                <a href="/2019/03/21/yun-fu-wu-qi-da-jian-bao-ta-mian-ban/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="centos搭建PHP环境">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="云服务器搭建宝塔面板">
                         
-                        <span class="card-title">centos搭建PHP环境</span>
+                        <span class="card-title">云服务器搭建宝塔面板</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            centos上搭建php开发环境安装apacheyum -y install httpd
-开启apache服务systemctl start httpd.service
-设置apache开机启动systemctl enable httpd.
+                            云服务器搭建宝塔一、准备工作一台云服务器 (阿里 腾讯 百度 都行)
+ssh 远程连接工具 或者直接管理服务器也行
+安装要求
+安装要求：内存：512M以上，推荐768M以上（纯面板约占系统60M内存）硬盘：100M以上可用硬盘空间（纯面板约
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-18
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-21
                         </span>
                         <span class="publish-author">
                             
@@ -586,12 +892,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/centos/" target="_blank">
-                        <span class="chip bg-color">centos</span>
+                    <a href="/tags/linux/" target="_blank">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
-                    <a href="/tags/shell/" target="_blank">
-                        <span class="chip bg-color">shell</span>
+                    <a href="/tags/宝塔面板/" target="_blank">
+                        <span class="chip bg-color">宝塔面板</span>
                     </a>
                     
                 </div>
@@ -602,49 +908,53 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/09/07/typora-vue-theme-zhu-ti-jie-shao/">
+                <a href="/2019/03/21/hexo-github-da-jian-ge-ren-bo-ke/">
                     <div class="card-image">
                         
-                        <img src="/source/images/xxx.jpg" class="responsive-img" alt="typora-vue-theme主题介绍">
                         
-                        <span class="card-title">typora-vue-theme主题介绍</span>
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="hexo + github搭建个人博客">
+                        
+                        <span class="card-title">hexo + github搭建个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+                            github + hexo搭建博客环境及工具git  nodejs hexo 1.1 安装git[git下载](https://www.git-scm.com/download/)1.2 安装nodejs[nodejs](http://no
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-09-07
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-21
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Markdown/" class="post-category" target="_blank">
-                                    Markdown
+                            <a href="/categories/hexo/" class="post-category" target="_blank">
+                                    hexo
+                                </a>
+                            
+                            <a href="/categories/hexo/博客/" class="post-category" target="_blank">
+                                    博客
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Typora/" target="_blank">
-                        <span class="chip bg-color">Typora</span>
+                    <a href="/tags/hexo/" target="_blank">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
-                    <a href="/tags/Markdown/" target="_blank">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/github/" target="_blank">
+                        <span class="chip bg-color">github</span>
                     </a>
                     
                 </div>
@@ -658,6 +968,99 @@
 
 
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
     
 
 </main>
