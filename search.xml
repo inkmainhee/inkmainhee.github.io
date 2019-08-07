@@ -4,6 +4,86 @@
   
     
     <entry>
+      <title>putty样式更改</title>
+      <link href="/2019/08/07/putty-yang-shi-geng-gai/"/>
+      <url>/2019/08/07/putty-yang-shi-geng-gai/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>参考网址 <a href="https://www.cnblogs.com/mujingyu/p/7704666.html" target="_blank" rel="noopener">https://www.cnblogs.com/mujingyu/p/7704666.html</a></p></blockquote><h2 id="putty-默认颜色样式修改-for-windows"><a href="#putty-默认颜色样式修改-for-windows" class="headerlink" title="putty 默认颜色样式修改 for windows"></a>putty 默认颜色样式修改 for windows</h2><h3 id="第一点-导出-putty-注册表默认配置文件"><a href="#第一点-导出-putty-注册表默认配置文件" class="headerlink" title="第一点 导出 putty 注册表默认配置文件"></a>第一点 导出 putty 注册表默认配置文件</h3><h4 id="1-1-打开注册表：运行-–-gt-regedit"><a href="#1-1-打开注册表：运行-–-gt-regedit" class="headerlink" title="1.1 打开注册表：运行 –&gt; regedit"></a>1.1 打开注册表：运行 –&gt; regedit</h4><pre><code>找到 putty 注册表文件[HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\Default%20Settings]</code></pre><blockquote><p>注： 保存之后才会出</p></blockquote><h4 id="1-2-右键-Default-20Settings-文件，点击导出至桌面。"><a href="#1-2-右键-Default-20Settings-文件，点击导出至桌面。" class="headerlink" title="1.2 右键 Default%20Settings 文件，点击导出至桌面。"></a>1.2 右键 Default%20Settings 文件，点击导出至桌面。</h4><h3 id="第二点-修改注册表默认配置"><a href="#第二点-修改注册表默认配置" class="headerlink" title="第二点 修改注册表默认配置"></a>第二点 修改注册表默认配置</h3><h4 id="2-1-把导出的-reg-文件用文本方式打开，上面标注的-所有-Colour-值覆盖替换下面的值："><a href="#2-1-把导出的-reg-文件用文本方式打开，上面标注的-所有-Colour-值覆盖替换下面的值：" class="headerlink" title="2.1 把导出的 reg 文件用文本方式打开，上面标注的 所有 Colour 值覆盖替换下面的值："></a>2.1 把导出的 reg 文件用文本方式打开，上面标注的 所有 Colour 值覆盖替换下面的值：</h4><pre><code>&quot;Colour0&quot;=&quot;255,255,255&quot;&quot;Colour1&quot;=&quot;255,255,255&quot;&quot;Colour2&quot;=&quot;51,51,51&quot;&quot;Colour3&quot;=&quot;85,85,85&quot;&quot;Colour4&quot;=&quot;0,0,0&quot;&quot;Colour5&quot;=&quot;0,255,0&quot;&quot;Colour6&quot;=&quot;77,77,77&quot;&quot;Colour7&quot;=&quot;85,85,85&quot;&quot;Colour8&quot;=&quot;187,0,0&quot;&quot;Colour9&quot;=&quot;255,85,85&quot;&quot;Colour10&quot;=&quot;152,251,152&quot;&quot;Colour11&quot;=&quot;85,255,85&quot;&quot;Colour12&quot;=&quot;240,230,140&quot;&quot;Colour13&quot;=&quot;255,255,85&quot;&quot;Colour14&quot;=&quot;205,133,63&quot;&quot;Colour15&quot;=&quot;135,206,235&quot;&quot;Colour16&quot;=&quot;255,222,173&quot;&quot;Colour17&quot;=&quot;255,85,255&quot;&quot;Colour18&quot;=&quot;255,160,160&quot;&quot;Colour19&quot;=&quot;255,215,0&quot;&quot;Colour20&quot;=&quot;245,222,179&quot;&quot;Colour21&quot;=&quot;255,255,255&quot;</code></pre><h4 id="2-2-将配置好文件再导入注册表里就行了。"><a href="#2-2-将配置好文件再导入注册表里就行了。" class="headerlink" title="2.2 将配置好文件再导入注册表里就行了。"></a>2.2 将配置好文件再导入注册表里就行了。</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> windows工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windows工具 </tag>
+            
+            <tag> ssh </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>c++语言学习</title>
+      <link href="/2019/08/07/c-yu-yan-xue-xi/"/>
+      <url>/2019/08/07/c-yu-yan-xue-xi/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>c语言深入学习</title>
+      <link href="/2019/08/07/c-yu-yan-shen-ru-xue-xi/"/>
+      <url>/2019/08/07/c-yu-yan-shen-ru-xue-xi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="参考网站"><a href="#参考网站" class="headerlink" title="参考网站"></a>参考网站</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>逆向工程入门</title>
+      <link href="/2019/08/07/ni-xiang-gong-cheng-ru-men/"/>
+      <url>/2019/08/07/ni-xiang-gong-cheng-ru-men/</url>
+      
+        <content type="html"><![CDATA[<h2 id="逆向"><a href="#逆向" class="headerlink" title="逆向"></a>逆向</h2><h3 id="第一点"><a href="#第一点" class="headerlink" title="第一点"></a>第一点</h3><h6 id="具备基本的编程能力，如c、c-，c、c-作为很基础的语言，不要求精通，但是必须会写，写个小工具完全没有问题，同时要对c-的类、继承、虚表虚函数等很熟悉，很多游戏都用c-开发，而且比较庞大，只有基础掌握好，才能更好的从汇编层来读懂代码，很多时候我们看单条汇编指令时完全没有问题的，但是一旦组合起来就会完全不知所云了，通过必须对高级语言对应的汇编语言实现要掌握，比如函数工作的原理，几种调用约定、参数传递方式以及返回值等都必须掌握，这方面网上很多资料。最好能懂python，python作为一种脚本语言，可以用来开发许多逆向调试工具的插件，可以帮我们节省很多的体力活。"><a href="#具备基本的编程能力，如c、c-，c、c-作为很基础的语言，不要求精通，但是必须会写，写个小工具完全没有问题，同时要对c-的类、继承、虚表虚函数等很熟悉，很多游戏都用c-开发，而且比较庞大，只有基础掌握好，才能更好的从汇编层来读懂代码，很多时候我们看单条汇编指令时完全没有问题的，但是一旦组合起来就会完全不知所云了，通过必须对高级语言对应的汇编语言实现要掌握，比如函数工作的原理，几种调用约定、参数传递方式以及返回值等都必须掌握，这方面网上很多资料。最好能懂python，python作为一种脚本语言，可以用来开发许多逆向调试工具的插件，可以帮我们节省很多的体力活。" class="headerlink" title="具备基本的编程能力，如c、c++，c、c++作为很基础的语言，不要求精通，但是必须会写，写个小工具完全没有问题，同时要对c++的类、继承、虚表虚函数等很熟悉，很多游戏都用c++开发，而且比较庞大，只有基础掌握好，才能更好的从汇编层来读懂代码，很多时候我们看单条汇编指令时完全没有问题的，但是一旦组合起来就会完全不知所云了，通过必须对高级语言对应的汇编语言实现要掌握，比如函数工作的原理，几种调用约定、参数传递方式以及返回值等都必须掌握，这方面网上很多资料。最好能懂python，python作为一种脚本语言，可以用来开发许多逆向调试工具的插件，可以帮我们节省很多的体力活。"></a>具备基本的编程能力，如c、c++，c、c++作为很基础的语言，不要求精通，但是必须会写，写个小工具完全没有问题，同时要对c++的类、继承、虚表虚函数等很熟悉，很多游戏都用c++开发，而且比较庞大，只有基础掌握好，才能更好的从汇编层来读懂代码，很多时候我们看单条汇编指令时完全没有问题的，但是一旦组合起来就会完全不知所云了，通过必须对高级语言对应的汇编语言实现要掌握，比如函数工作的原理，几种调用约定、参数传递方式以及返回值等都必须掌握，这方面网上很多资料。最好能懂python，python作为一种脚本语言，可以用来开发许多逆向调试工具的插件，可以帮我们节省很多的体力活。</h6><h3 id="第二点"><a href="#第二点" class="headerlink" title="第二点"></a>第二点</h3><h5 id="对windows系统知识比较了解，因为外挂会设计比较多的windows系统知识，因此要对windows底层要一定的掌握，比如windows-api，以及外观常用的注入、钩子技术还有windows系统的异常处理机制等，可以到广海论坛学习外挂常用的较按键精灵、加速齿轮以及注入等同用知识，书籍可以可以参见《windows核心编程》，对底层知识了解越多，分析外挂技术也越容易。3、对逆向分析工具的熟练使用，我们平时工作中面对的是二进制可执行程序，要做外挂我们首先的分析目标程序，因此对常用的调试工具windbg、ollydbg、静态分析工具ida一定要熟练使用。网上教程也比较多，可以到看雪论坛上利用相关的crackme练手学习"><a href="#对windows系统知识比较了解，因为外挂会设计比较多的windows系统知识，因此要对windows底层要一定的掌握，比如windows-api，以及外观常用的注入、钩子技术还有windows系统的异常处理机制等，可以到广海论坛学习外挂常用的较按键精灵、加速齿轮以及注入等同用知识，书籍可以可以参见《windows核心编程》，对底层知识了解越多，分析外挂技术也越容易。3、对逆向分析工具的熟练使用，我们平时工作中面对的是二进制可执行程序，要做外挂我们首先的分析目标程序，因此对常用的调试工具windbg、ollydbg、静态分析工具ida一定要熟练使用。网上教程也比较多，可以到看雪论坛上利用相关的crackme练手学习" class="headerlink" title="对windows系统知识比较了解，因为外挂会设计比较多的windows系统知识，因此要对windows底层要一定的掌握，比如windows api，以及外观常用的注入、钩子技术还有windows系统的异常处理机制等，可以到广海论坛学习外挂常用的较按键精灵、加速齿轮以及注入等同用知识，书籍可以可以参见《windows核心编程》，对底层知识了解越多，分析外挂技术也越容易。3、对逆向分析工具的熟练使用，我们平时工作中面对的是二进制可执行程序，要做外挂我们首先的分析目标程序，因此对常用的调试工具windbg、ollydbg、静态分析工具ida一定要熟练使用。网上教程也比较多，可以到看雪论坛上利用相关的crackme练手学习"></a>对windows系统知识比较了解，因为外挂会设计比较多的windows系统知识，因此要对windows底层要一定的掌握，比如windows api，以及外观常用的注入、钩子技术还有windows系统的异常处理机制等，可以到广海论坛学习外挂常用的较按键精灵、加速齿轮以及注入等同用知识，书籍可以可以参见《windows核心编程》，对底层知识了解越多，分析外挂技术也越容易。3、对逆向分析工具的熟练使用，我们平时工作中面对的是二进制可执行程序，要做外挂我们首先的分析目标程序，因此对常用的调试工具windbg、ollydbg、静态分析工具ida一定要熟练使用。网上教程也比较多，可以到看雪论坛上利用相关的crackme练手学习</h5><h3 id="第三点"><a href="#第三点" class="headerlink" title="第三点"></a>第三点</h3><h5 id="掌握外壳原理和技巧，熟悉常见的加解密算法、反调试技巧，我们分析程序时经常会遇到很多加壳程序，因此我们必须对外壳的原理和基本知识比较熟悉，熟练掌握同用的脱壳技巧，同时对各种反调试技巧也必须要很熟悉，在分析程序时，一般会遇到很多加解密算法，因此必须要对各种加解密算法的特征有一定的快速识别能力，这样能更快得帮助我们分析目标程序的核心功能。这方面可以参看《加密与解密》这本书，讲的非常好与详细"><a href="#掌握外壳原理和技巧，熟悉常见的加解密算法、反调试技巧，我们分析程序时经常会遇到很多加壳程序，因此我们必须对外壳的原理和基本知识比较熟悉，熟练掌握同用的脱壳技巧，同时对各种反调试技巧也必须要很熟悉，在分析程序时，一般会遇到很多加解密算法，因此必须要对各种加解密算法的特征有一定的快速识别能力，这样能更快得帮助我们分析目标程序的核心功能。这方面可以参看《加密与解密》这本书，讲的非常好与详细" class="headerlink" title="掌握外壳原理和技巧，熟悉常见的加解密算法、反调试技巧，我们分析程序时经常会遇到很多加壳程序，因此我们必须对外壳的原理和基本知识比较熟悉，熟练掌握同用的脱壳技巧，同时对各种反调试技巧也必须要很熟悉，在分析程序时，一般会遇到很多加解密算法，因此必须要对各种加解密算法的特征有一定的快速识别能力，这样能更快得帮助我们分析目标程序的核心功能。这方面可以参看《加密与解密》这本书，讲的非常好与详细"></a>掌握外壳原理和技巧，熟悉常见的加解密算法、反调试技巧，我们分析程序时经常会遇到很多加壳程序，因此我们必须对外壳的原理和基本知识比较熟悉，熟练掌握同用的脱壳技巧，同时对各种反调试技巧也必须要很熟悉，在分析程序时，一般会遇到很多加解密算法，因此必须要对各种加解密算法的特征有一定的快速识别能力，这样能更快得帮助我们分析目标程序的核心功能。这方面可以参看《加密与解密》这本书，讲的非常好与详细</h5>]]></content>
+      
+      
+      <categories>
+          
+          <category> 逆向 </category>
+          
+          <category> 漏洞挖掘 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 逆向 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>渗透测试-信息收集</title>
       <link href="/2019/08/06/shen-tou-ce-shi-xin-xi-shou-ji/"/>
       <url>/2019/08/06/shen-tou-ce-shi-xin-xi-shou-ji/</url>

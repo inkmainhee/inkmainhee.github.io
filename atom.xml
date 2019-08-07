@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-06T14:00:48.113Z</updated>
+  <updated>2019-08-07T02:06:01.691Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,99 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>putty样式更改</title>
+    <link href="http://yoursite.com/2019/08/07/putty-yang-shi-geng-gai/"/>
+    <id>http://yoursite.com/2019/08/07/putty-yang-shi-geng-gai/</id>
+    <published>2019-08-07T01:59:06.000Z</published>
+    <updated>2019-08-07T02:06:01.691Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;参考网址 &lt;a href=&quot;https://www.cnblogs.com/mujingyu/p/7704666.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="windows工具" scheme="http://yoursite.com/categories/windows%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="windows工具" scheme="http://yoursite.com/tags/windows%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="ssh" scheme="http://yoursite.com/tags/ssh/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c++语言学习</title>
+    <link href="http://yoursite.com/2019/08/07/c-yu-yan-xue-xi/"/>
+    <id>http://yoursite.com/2019/08/07/c-yu-yan-xue-xi/</id>
+    <published>2019-08-07T01:52:03.000Z</published>
+    <updated>2019-08-07T01:53:30.173Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>c语言深入学习</title>
+    <link href="http://yoursite.com/2019/08/07/c-yu-yan-shen-ru-xue-xi/"/>
+    <id>http://yoursite.com/2019/08/07/c-yu-yan-shen-ru-xue-xi/</id>
+    <published>2019-08-07T01:51:45.000Z</published>
+    <updated>2019-08-07T02:02:01.785Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;参考网站&quot;&gt;&lt;a href=&quot;#参考网站&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>逆向工程入门</title>
+    <link href="http://yoursite.com/2019/08/07/ni-xiang-gong-cheng-ru-men/"/>
+    <id>http://yoursite.com/2019/08/07/ni-xiang-gong-cheng-ru-men/</id>
+    <published>2019-08-07T01:48:18.000Z</published>
+    <updated>2019-08-07T01:52:50.368Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;逆向&quot;&gt;&lt;a href=&quot;#逆向&quot; class=&quot;headerlink&quot; title=&quot;逆向&quot;&gt;&lt;/a&gt;逆向&lt;/h2&gt;&lt;h3 id=&quot;第一点&quot;&gt;&lt;a href=&quot;#第一点&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="逆向" scheme="http://yoursite.com/categories/%E9%80%86%E5%90%91/"/>
+    
+      <category term="漏洞挖掘" scheme="http://yoursite.com/categories/%E9%80%86%E5%90%91/%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98/"/>
+    
+    
+      <category term="逆向" scheme="http://yoursite.com/tags/%E9%80%86%E5%90%91/"/>
+    
+  </entry>
   
   <entry>
     <title>渗透测试-信息收集</title>
