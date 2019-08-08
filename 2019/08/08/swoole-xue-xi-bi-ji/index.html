@@ -4,8 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="文章测试, InkRainHee Blog">
-    <meta name="description" content="文章测试 | InkRainHee Blog">
+    <meta name="keywords" content="Swoole 学习笔记, InkRainHee Blog">
+    <meta name="description" content="Swoole1.准备工作
+1) linux环境下开发2) php7 swoole2.1以上 redis3) 源码安装php7 源码安装swoole
+搭建一个centos 环境
+更新系统 yum install epel-release -y">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>文章测试 | InkRainHee Blog</title>
+    <title>Swoole 学习笔记 | InkRainHee Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -262,13 +265,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        文章测试
+                        Swoole 学习笔记
                     </div>
                 </div>
             </div>
@@ -377,12 +380,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Swoole/" target="_blank">
+                                <span class="chip bg-color">Swoole</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/编程/" class="post-category" target="_blank">
+                                编程
+                            </a>
+                        
+                            <a href="/categories/编程/PHP/" class="post-category" target="_blank">
+                                PHP
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -390,21 +410,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-06
+                    2019-08-08
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        0
+                        1.4k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        6 分
                     </div>
                     
                 
@@ -420,7 +440,85 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="Swoole"><a href="#Swoole" class="headerlink" title="Swoole"></a>Swoole</h2><p>1.准备工作</p>
+<p>1) linux环境下开发<br>2) php7 swoole2.1以上 redis<br>3) 源码安装php7 源码安装swoole</p>
+<p>搭建一个centos 环境</p>
+<p>更新系统 yum install epel-release -y</p>
+<p>更新 软件包 yum update </p>
+<p>安装php依赖组件（包含Nginx依赖）：</p>
+<p>yum -y install wget vim pcre pcre-devel openssl openssl-devel libicu-devel gcc gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel ncurses ncurses-devel curl curl-devel krb5-devel libidn libidn-devel openldap openldap-devel nss_ldap jemalloc-devel cmake boost-devel bison automake libevent libevent-devel gd gd-devel libtool* libmcrypt libmcrypt-devel mcrypt mhash libxslt libxslt-devel readline readline-devel gmp gmp-devel libcurl libcurl-devel openjpeg-devel</p>
+<p>从官网下载php源码包放到centos /opt/work/softpackage/  （我随便放的，不代表一定要放到这里）</p>
+<p>我下载的是tar.bz2格式的压缩包<br>解压命令 tar -xjvf php7.2.2.1.tar.bz2</p>
+<p>cd 进入刚才解压好的文件夹</p>
+<p>通过./configure 来编译php </p>
+<blockquote>
+<p>前提 centos环境有gcc工具</p>
+</blockquote>
+<p>没有的话 通过yum install gcc </p>
+<p>–prefix=/opt/php //指定 php 安装目录<br>–with-apxs2=/usr/local/apache/bin/apxs //整合Apache<br>–with-config-file-path=/opt/php/etc //指定php.ini位置<br>–with-config-file-scan-dir=/opt/php/etc/php.d //指定额外拓展配置归放处文件夹<br>–enable-safe-mode //打开安全模式<br>–enable-ftp //打开ftp的支持<br>–enable-zip //打开对zip的支持<br>–with-bz2 //打开对bz2文件的支持<br>–with-jpeg-dir //打开对jpeg图片的支持<br>–with-png-dir //打开对png图片的支持<br>–with-freetype-dir //打开对freetype字体库的支持<br>–without-iconv //关闭iconv函数，各种字符集间的转换<br>–with-libXML-dir //打开libxml2库的支持<br>–with-XMLrpc //打开xml-rpc的c语言<br>–with-zlib-dir //打开zlib库的支持<br>–with-gd //打开gd库的支持<br>–enable-gd-native-ttf //支持TrueType字符串函数库<br>–with-curl //打开curl浏览工具的支持<br>–with-curlwrappers //运用curl工具打开url流<br>–with-ttf //打开freetype1.*的支持，可以不加了<br>–with-xsl //打开XSLT 文件支持，扩展了libXML2库 ，需要libxslt软件<br>–with-gettext //打开gnu 的gettext 支持，编码库用到<br>–with-pear //打开pear命令的支持，PHP扩展用的<br>–enable-calendar //打开日历扩展功能<br>–enable-mbstring //多字节，字符串的支持<br>–enable-bcmath //精度计算，解决蛋疼的数字运算精度问题<br>–enable-sockets //打开 sockets 支持<br>–enable-exif //图片的元数据支持<br>–enable-magic-quotes //魔术引用的支持<br>–disable-rpath //关闭额外的运行库文件<br>–disable-debug //关闭调试模式<br>–with-ldap-dir //轻量目录访问协议</p>
+<p>选择两个就可以了</p>
+<p>./configure –prefix=/opt/work/softpackage/php7.2 –with-config-file-path=/opt/work/softpackage/php7.2/etc/php_ini_file/</p>
+<p>Thank you for using PHP.</p>
+<p>config.status: creating php7.spec<br>config.status: creating main/build-defs.h<br>config.status: creating scripts/phpize<br>config.status: creating scripts/man1/phpize.1<br>config.status: creating scripts/php-config<br>config.status: creating scripts/man1/php-config.1<br>config.status: creating sapi/cli/php.1<br>config.status: creating sapi/phpdbg/phpdbg.1<br>config.status: creating sapi/cgi/php-cgi.1<br>config.status: creating ext/phar/phar.1<br>config.status: creating ext/phar/phar.phar.1<br>config.status: creating main/php_config.h<br>config.status: executing default commands</p>
+<p>看到类似上面的字母后 php已经编译完成了</p>
+<p>成功之后 执行make &amp;&amp; make install 去安装</p>
+<p>安装完成后 我们进入到php安装目录下的bin目录</p>
+<p>vim 创建 test.php</p>
+<p>写入 </p>
+<pre><code>&lt;?php
+echo &#39;hello world&#39;;</code></pre><p>执行 ./php test.php<br>测试一下php是否安装成功</p>
+<p>成功的话 应该会输出hello world</p>
+<p>我们在来看下php.ini 的位置是否是我们设置好的</p>
+<p>php -i | grep php.ini</p>
+<p>如果出现   /…../etc/php_ini_file 那么证明我们php.ini的位置已经设置好了</p>
+<p>我们回到之前解压的php目录 可以看到里面有两个以php.ini为开头的文件 </p>
+<p>复制php.ini-development 到 我们配置好的php_ini_file</p>
+<p>cp php.ini-development ../softpackage/php7.2/etc/php_ini_file/</p>
+<p>之后我们进入到 php_ini_file 目录 </p>
+<p>执行 mv php.ini-development php.ini</p>
+<p>配置 php 为环境变量</p>
+<p>export PATH=$PATH:/opt/work/softpackage/php7.2/bin/</p>
+<p>//更新配置<br>source /etc/profile</p>
+<p>下载swoole 源码包</p>
+<p>github: <a href="https://github.com/swoole/swoole-src.git" target="_blank" rel="noopener">https://github.com/swoole/swoole-src.git</a></p>
+<p>gitee: <a href="https://gitee.com/swoole/swoole.git" target="_blank" rel="noopener">https://gitee.com/swoole/swoole.git</a> (更快一些)</p>
+<p>执行 命令 git clone <a href="https://github.com/swoole/swoole-src.git" target="_blank" rel="noopener">https://github.com/swoole/swoole-src.git</a></p>
+<p>或者 git clone <a href="https://gitee.com/swoole/swoole.git" target="_blank" rel="noopener">https://gitee.com/swoole/swoole.git</a></p>
+<p>如果没有git 的话<br>通过 yum install git来安装git</p>
+<p>下载之后进入swoole 的文件夹</p>
+<p>执行phpize 来生成configure文件</p>
+<p>执行 ./configure –with-php-config=/opt/work/softpackage/php7.2/bin/php-config</p>
+<p>make &amp;&amp; make install </p>
+<p>当出现 </p>
+<pre><code>Build complete.
+Don&#39;t forget to run &#39;make test&#39;.
+
+Installing shared extensions:     /opt/work/softpackage/php7.2/lib/php/extensions/no-debug-non-zts-20170718/
+Installing header files:          /opt/work/softpackage/php7.2/include/php/
+</code></pre><p>我们进入  /opt/work/softpackage/php7.2/lib/php/extensions/no-debug-non-zts-20170718/ (上面的Installing shared extensions)</p>
+<p>如果存在swoole.so 说明swoole 已经成功安装了</p>
+<blockquote>
+<p>cd – 可以回到之前的目录</p>
+</blockquote>
+<p>引入swoole 扩展 配置php.ini文件</p>
+<p>vim /opt/work/softpackage/php7.2/etc/php_ini_file/php.ini</p>
+<p>命令模式下 按 ‘/‘<br>接着输入extension 回车后去查找extension 按下 小写’n’查找下一个 按下大写’N’ 查找上一个</p>
+<p>找到;extension= 按下i切换到插入模式</p>
+<p>输入extension=swoole</p>
+<p>按下esc 输入’:wq’  保存退出</p>
+<p>用 php -m 检测一下</p>
+<p>如果出现swoole 引入成功</p>
+<p>再到我们之前下载的swoole目录里</p>
+<p>进入examples下的server 目录</p>
+<p>运行 vim echo.php 查看echo.php文件</p>
+<p>可以看到里面 实例化了一个swoole_server对象 监听9501端口</p>
+<p>输入 ‘:quit’退出vim</p>
+<p>输入php echo.php 回车</p>
+<p>我们打开另一个terminal 输入<br>netstat -anp|grep 9501</p>
+<pre><code>(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+tcp        0      0 0.0.0.0:9501            0.0.0.0:*               LISTEN      121984/php  </code></pre><p>可以看到9501端口已经开启</p>
+
             </div>
             <hr/>
 
@@ -578,9 +676,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《文章测试》
+                    《Swoole 学习笔记》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/06/wen-zhang-ce-shi/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/08/swoole-xue-xi-bi-ji/" property="cc:attributionName"
                rel="cc:attributionURL">
                 InkRainHee Blog
             </a> 采用
@@ -620,36 +718,57 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/08/06/hello-world/">
+                <a href="/2019/08/08/swoole-xue-xi-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Swoole 学习笔记">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Swoole 学习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            Swoole1.准备工作
+1) linux环境下开发2) php7 swoole2.1以上 redis3) 源码安装php7 源码安装swoole
+搭建一个centos 环境
+更新系统 yum install epel-release -y
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-08
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            InkRainHee Blog
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/编程/" class="post-category" target="_blank">
+                                    编程
+                                </a>
+                            
+                            <a href="/categories/编程/PHP/" class="post-category" target="_blank">
+                                    PHP
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Swoole/" target="_blank">
+                        <span class="chip bg-color">Swoole</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -661,13 +780,13 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/04/14/google-tutorial/">
+                <a href="/2019/08/07/zi-wang-yan-ma-hua-fen-zi-wang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Google tutorial">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="子网掩码划分子网">
                         
-                        <span class="card-title">Google tutorial</span>
+                        <span class="card-title">子网掩码划分子网</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -678,14 +797,18 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-04-14
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Tutorial/" class="post-category" target="_blank">
-                                    Tutorial
+                            <a href="/categories/子网划分/" class="post-category" target="_blank">
+                                    子网划分
+                                </a>
+                            
+                            <a href="/categories/子网划分/网络/" class="post-category" target="_blank">
+                                    网络
                                 </a>
                             
                             
@@ -695,8 +818,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/google/" target="_blank">
-                        <span class="chip bg-color">google</span>
+                    <a href="/tags/子网划分/" target="_blank">
+                        <span class="chip bg-color">-子网划分</span>
                     </a>
                     
                 </div>
