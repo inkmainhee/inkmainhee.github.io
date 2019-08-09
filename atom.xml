@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-08T13:59:11.071Z</updated>
+  <updated>2019-08-09T01:50:35.126Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>markdown语法</title>
+    <link href="http://yoursite.com/2019/08/09/markdown-yu-fa/"/>
+    <id>http://yoursite.com/2019/08/09/markdown-yu-fa/</id>
+    <published>2019-08-09T01:50:35.000Z</published>
+    <updated>2019-08-09T01:50:35.126Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vim 用法</title>
+    <link href="http://yoursite.com/2019/08/09/vim-yong-fa/"/>
+    <id>http://yoursite.com/2019/08/09/vim-yong-fa/</id>
+    <published>2019-08-09T01:30:31.000Z</published>
+    <updated>2019-08-09T01:50:14.538Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;命令行下的神级编辑器-Vim&quot;&gt;&lt;a href=&quot;#命令行下的神级编辑器-Vim&quot; class=&quot;headerlink&quot; title=&quot;命令行下的神级编辑器 Vim&quot;&gt;&lt;/a&gt;命令行下的神级编辑器 Vim&lt;/h1&gt;&lt;h2 id=&quot;模式介绍&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+    
+    
+      <category term="vim" scheme="http://yoursite.com/tags/vim/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Swoole 学习笔记</title>
     <link href="http://yoursite.com/2019/08/08/swoole-xue-xi-bi-ji/"/>
     <id>http://yoursite.com/2019/08/08/swoole-xue-xi-bi-ji/</id>
     <published>2019-08-08T08:19:13.000Z</published>
-    <updated>2019-08-08T13:59:11.071Z</updated>
+    <updated>2019-08-09T01:23:56.971Z</updated>
     
     <summary type="html">
     
@@ -50,7 +90,7 @@
     <link href="http://yoursite.com/2019/08/07/zi-wang-yan-ma-hua-fen-zi-wang/"/>
     <id>http://yoursite.com/2019/08/07/zi-wang-yan-ma-hua-fen-zi-wang/</id>
     <published>2019-08-07T11:37:01.000Z</published>
-    <updated>2019-08-07T11:37:43.013Z</updated>
+    <updated>2019-08-09T01:52:36.049Z</updated>
     
     <summary type="html">
     
@@ -61,7 +101,7 @@
       <category term="网络" scheme="http://yoursite.com/categories/%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86/%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="-子网划分" scheme="http://yoursite.com/tags/%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86/"/>
+      <category term="子网划分" scheme="http://yoursite.com/tags/%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86/"/>
     
   </entry>
   

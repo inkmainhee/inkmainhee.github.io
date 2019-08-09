@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo + github搭建个人博客, InkRainHee Blog">
-    <meta name="description" content="github + hexo搭建博客环境及工具git  nodejs hexo 1.1 安装git[git下载](https://www.git-scm.com/download/)1.2 安装nodejs[nodejs](http://no">
+    <meta name="keywords" content="markdown语法, InkRainHee Blog">
+    <meta name="description" content="markdown语法 | InkRainHee Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>hexo + github搭建个人博客 | InkRainHee Blog</title>
+    <title>markdown语法 | InkRainHee Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -268,7 +268,7 @@
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        hexo + github搭建个人博客
+                        markdown语法
                     </div>
                 </div>
             </div>
@@ -377,33 +377,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/hexo/" target="_blank">
-                                <span class="chip bg-color">hexo</span>
-                            </a>
-                        
-                            <a href="/tags/github/" target="_blank">
-                                <span class="chip bg-color">github</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fa fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/hexo/" class="post-category" target="_blank">
-                                hexo
-                            </a>
-                        
-                            <a href="/categories/hexo/博客/" class="post-category" target="_blank">
-                                博客
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -411,21 +390,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-21
+                    2019-08-09
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        489
+                        0
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        1 分
                     </div>
                     
                 
@@ -441,47 +420,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="github-hexo搭建博客"><a href="#github-hexo搭建博客" class="headerlink" title="github + hexo搭建博客"></a>github + hexo搭建博客</h1><h2 id="环境及工具"><a href="#环境及工具" class="headerlink" title="环境及工具"></a>环境及工具</h2><pre><code>git  nodejs hexo </code></pre><h3 id="1-1-安装git"><a href="#1-1-安装git" class="headerlink" title="1.1 安装git"></a>1.1 安装git</h3><pre><code>[git下载](https://www.git-scm.com/download/)</code></pre><h3 id="1-2-安装nodejs"><a href="#1-2-安装nodejs" class="headerlink" title="1.2 安装nodejs"></a>1.2 安装nodejs</h3><pre><code>[nodejs](http://nodejs.cn/download/)
-
-wget https://nodejs.org/dist/v9.3.0/node-v9.3.0-linux-x64.tar.xz
-
-xz -d node-v9.3.0-linux-x64.tar.xz</code></pre><p>tar -xf node-v9.3.0-linux-x64.tar</p>
-<p>ln -s ~/node-v9.3.0-linux-x64/bin/node /usr/bin/node<br>ln -s ~/node-v9.3.0-linux-x64/bin/npm /usr/bin/npm</p>
-<p>测试</p>
-<p>node -v<br>npm -v</p>
-<h3 id="1-3安装hexo-使用下面的命令来下载和安装-Hexo"><a href="#1-3安装hexo-使用下面的命令来下载和安装-Hexo" class="headerlink" title="1.3安装hexo 使用下面的命令来下载和安装 Hexo"></a>1.3安装hexo 使用下面的命令来下载和安装 Hexo</h3><pre><code>npm install hexo-cli -g
-//或者
-npm install hexo -g --no-optional</code></pre><blockquote>
-<p>这里 -g 代表全局安装，这样 hexo 包将放在 /usr/local/lib/node_modules (Windows 位于 ~/AppData/Roaming/npm/node_modules)，不带的话是本地安装，将放在当前目录的 node_modules 下</p>
-</blockquote>
-<h3 id="1-4-注册github账号"><a href="#1-4-注册github账号" class="headerlink" title="1.4 注册github账号"></a>1.4 注册github账号</h3><p>   <a href="https://github.com/signup" target="_blank" rel="noopener">https://github.com/signup</a></p>
-<h3 id="1-5-创建github仓库"><a href="#1-5-创建github仓库" class="headerlink" title="1.5 创建github仓库"></a>1.5 创建github仓库</h3><blockquote>
-<p>   以自己的用户名 + github.io 来命名 </p>
-</blockquote>
-<h2 id="二、在本地创建博客"><a href="#二、在本地创建博客" class="headerlink" title="二、在本地创建博客"></a>二、在本地创建博客</h2><blockquote>
-<p>(在之后hexo的命令我都用的简写)</p>
-</blockquote>
-<h3 id="1-初始化博客环境"><a href="#1-初始化博客环境" class="headerlink" title="1. 初始化博客环境"></a>1. 初始化博客环境</h3><p>首先建立一个文件夹 作为博客的根目录 然后进入该目录在命令行中执行</p>
-<pre><code>// 初始化hexo环境
-hexo init
-// 使用npm安装所需的组件
-npm install</code></pre><h3 id="2-发表一篇新文章"><a href="#2-发表一篇新文章" class="headerlink" title="2. 发表一篇新文章"></a>2. 发表一篇新文章</h3><blockquote>
-<p>我们可以使用下面命令来创建一篇新的文章，或者直接将文章放到 &lt;博客根目录&gt;/source/_posts 目录里</p>
-</blockquote>
-<pre><code>hexo new  &quot;文章标题&quot;</code></pre><h3 id="3-生成博客静态网页"><a href="#3-生成博客静态网页" class="headerlink" title="3. 生成博客静态网页"></a>3. 生成博客静态网页</h3><blockquote>
-<p>使用下面命令将 source 文件生成静态网页，生成的文件放在<blog_root>/public 目录下</blog_root></p>
-</blockquote>
-<pre><code>hexo  g</code></pre><h3 id="4-将网页发布到server端"><a href="#4-将网页发布到server端" class="headerlink" title="4. 将网页发布到server端"></a>4. 将网页发布到server端</h3><pre><code>hexo s</code></pre><blockquote>
-<p>最后我们就可以通过浏览器访问服务器网页。这里我们没配置server信息，所以server其实是本机（<a href="http://localhost:4000）" target="_blank" rel="noopener">http://localhost:4000）</a></p>
-</blockquote>
-<h2 id="三、部署到码云"><a href="#三、部署到码云" class="headerlink" title="三、部署到码云"></a>三、部署到码云</h2><blockquote>
-<p>首先在全局配置文件 _config.yml 里的 deploy 部分进行配置，其中 repo为你的github pages对应的仓库地址（yourname.github.io )：</p>
-</blockquote>
-<p>需要安装一个git插件</p>
-<pre><code>deploy:
-  type: git
-  repo: https://.........git
-  branch: master</code></pre>
+                
             </div>
             <hr/>
 
@@ -639,9 +578,9 @@ npm install</code></pre><h3 id="2-发表一篇新文章"><a href="#2-发表一�
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《hexo + github搭建个人博客》
+                    《markdown语法》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/03/21/hexo-github-da-jian-ge-ren-bo-ke/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/09/markdown-yu-fa/" property="cc:attributionName"
                rel="cc:attributionURL">
                 InkRainHee Blog
             </a> 采用
@@ -681,66 +620,39 @@ npm install</code></pre><h3 id="2-发表一篇新文章"><a href="#2-发表一�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/03/21/win10-da-jian-linux-huan-jing-linux-zi-xi-tong/">
+                <a href="/2019/08/09/markdown-yu-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="win10搭建Linux环境(linux子系统)">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="markdown语法">
                         
-                        <span class="card-title">win10搭建Linux环境(linux子系统)</span>
+                        <span class="card-title">markdown语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Linux
-以下文档都是我亲自测试过的除了xampp那块设置root密码sudo passwd 
-    or
-sudo passwd root切换root身份su -
-    or 
-su root配置 ssh以root身份输入servi
+                            
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-09
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/linux/" class="post-category" target="_blank">
-                                    linux
-                                </a>
-                            
-                            <a href="/categories/linux/ubuntu/" class="post-category" target="_blank">
-                                    ubuntu
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            InkRainHee Blog
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/linux/" target="_blank">
-                        <span class="chip bg-color">linux</span>
-                    </a>
-                    
-                    <a href="/tags/win10/" target="_blank">
-                        <span class="chip bg-color">win10</span>
-                    </a>
-                    
-                    <a href="/tags/ubuntu/" target="_blank">
-                        <span class="chip bg-color">ubuntu</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -751,26 +663,28 @@ su root配置 ssh以root身份输入servi
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/03/18/centos-da-jian-php-huan-jing/">
+                <a href="/2019/08/09/vim-yong-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="centos搭建PHP环境">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="vim 用法">
                         
-                        <span class="card-title">centos搭建PHP环境</span>
+                        <span class="card-title">vim 用法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            centos上搭建php开发环境安装apacheyum -y install httpd
-开启apache服务systemctl start httpd.service
-设置apache开机启动systemctl enable httpd.
+                            命令行下的神级编辑器 Vim模式介绍
+普通模式(Normal mode)
+
+
+在普通模式中，用的编辑器命令，比如移动光标，删除文本等等。这也是Vim启动后的默认模式。这正好和许多新用户期待的操作方式相反（大多数编辑器默认模式为插入模式）。在
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-18
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-09
                             </span>
                         <span class="publish-author">
                             
@@ -787,12 +701,8 @@ su root配置 ssh以root身份输入servi
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/centos/" target="_blank">
-                        <span class="chip bg-color">centos</span>
-                    </a>
-                    
-                    <a href="/tags/shell/" target="_blank">
-                        <span class="chip bg-color">shell</span>
+                    <a href="/tags/vim/" target="_blank">
+                        <span class="chip bg-color">vim</span>
                     </a>
                     
                 </div>
