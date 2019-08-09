@@ -414,14 +414,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        734
+                        1.8k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        6 分
                     </div>
                     
                 
@@ -508,8 +508,280 @@ dwareminkrainhee</code></pre><p>按<code>Esc</code>进入普通模式，在该�
 <td><code>l</code></td>
 <td align="center">右 (小写l)</td>
 </tr>
+<tr>
+<td><code>w</code></td>
+<td align="center">移动到下一个单词</td>
+</tr>
+<tr>
+<td><code>b</code></td>
+<td align="center">移动到上一个单词</td>
+</tr>
 </tbody></table>
+<h2 id="进入插入模式"><a href="#进入插入模式" class="headerlink" title="进入插入模式"></a>进入插入模式</h2><blockquote>
+<p>在普通模式下使用下面的键将进入插入模式，并可以从相应的位置开始输入</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>i</code></td>
+<td align="center">在当前光标处进行编辑</td>
+</tr>
+<tr>
+<td><code>I</code></td>
+<td align="center">在行首插入</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td align="center">在行末插入</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td align="center">在光标后插入编辑</td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td align="center">在当前行后插入一个新行</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td align="center">在当前行前插入一个新行</td>
+</tr>
+<tr>
+<td><code>cw</code></td>
+<td align="center">替换从光标所在位置后到一个单词结尾的字符</td>
+</tr>
+</tbody></table>
+<h2 id="保存文档"><a href="#保存文档" class="headerlink" title="保存文档"></a>保存文档</h2><h3 id="命令行模式下保存文档"><a href="#命令行模式下保存文档" class="headerlink" title="命令行模式下保存文档"></a>命令行模式下保存文档</h3><blockquote>
+<p>从普通模式输入<code>:</code>进入命令行模式，输入<code>w</code>回车，保存文档。输入<code>:w 文件名</code>可以将文档另存为其他文件名或存到其它路径下</p>
+</blockquote>
+<h2 id="退出vim"><a href="#退出vim" class="headerlink" title="退出vim"></a>退出vim</h2><h3 id="命令行模式下退出vim"><a href="#命令行模式下退出vim" class="headerlink" title="命令行模式下退出vim"></a>命令行模式下退出vim</h3><blockquote>
+<p>从普通模式输入<code>:</code>进入命令行模式，输入<code>wq</code>回车，保存并退出编辑</p>
+</blockquote>
+<p>以下为其它几种退出方式：</p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>:q!</code></td>
+<td align="center">强制退出，不保存</td>
+</tr>
+<tr>
+<td><code>:q</code></td>
+<td align="center">退出</td>
+</tr>
+<tr>
+<td><code>:wq!</code></td>
+<td align="center">强制保存并退出</td>
+</tr>
+<tr>
+<td><code>:w &lt;文件路径&gt;</code></td>
+<td align="center">另存为</td>
+</tr>
+<tr>
+<td><code>:saveas 文件路径</code></td>
+<td align="center">另存为</td>
+</tr>
+<tr>
+<td><code>:x</code></td>
+<td align="center">保存并退出</td>
+</tr>
+<tr>
+<td><code>:wq</code></td>
+<td align="center">保存并退出</td>
+</tr>
+</tbody></table>
+<h3 id="普通模式下退出vim"><a href="#普通模式下退出vim" class="headerlink" title="普通模式下退出vim"></a>普通模式下退出vim</h3><blockquote>
+<p>普通模式下输入<code>Shift+zz</code>即可保存退出vim</p>
+</blockquote>
+<h2 id="删除文本"><a href="#删除文本" class="headerlink" title="删除文本"></a>删除文本</h2><h3 id="普通模式下删除vim文本信息"><a href="#普通模式下删除vim文本信息" class="headerlink" title="普通模式下删除vim文本信息"></a>普通模式下删除vim文本信息</h3><blockquote>
+<p>进入普通模式，使用下列命令可以进行文本快速删除：</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>x</code></td>
+<td align="center">删除游标所在的字符</td>
+</tr>
+<tr>
+<td><code>X</code></td>
+<td align="center">删除游标所在前一个字符</td>
+</tr>
+<tr>
+<td><code>Delete</code></td>
+<td align="center">同<code>x</code></td>
+</tr>
+<tr>
+<td><code>dd</code></td>
+<td align="center">删除整行</td>
+</tr>
+<tr>
+<td><code>dw</code></td>
+<td align="center">删除一个单词(不适用中文)</td>
+</tr>
+<tr>
+<td><code>d$</code>或<code>D</code></td>
+<td align="center">删除至行尾</td>
+</tr>
+<tr>
+<td><code>d^</code></td>
+<td align="center">删除至行首</td>
+</tr>
+<tr>
+<td><code>dG</code></td>
+<td align="center">删除到文档结尾处</td>
+</tr>
+<tr>
+<td><code>d1G</code></td>
+<td align="center">删至文档首部</td>
+</tr>
+<tr>
+<td><code>dnj</code>(n代表数字)</td>
+<td align="center">删除光标所在行向下n+1行</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>除此之外，你还可以在命令之前加上数字，表示一次删除多行，如： </p>
+</blockquote>
+<p><code>2dd</code>表示一次删除2行</p>
+<h2 id="复制文本"><a href="#复制文本" class="headerlink" title="复制文本"></a>复制文本</h2><h3 id="常用复制命令"><a href="#常用复制命令" class="headerlink" title="常用复制命令"></a>常用复制命令</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>yy</code></td>
+<td align="center">复制光标所在行</td>
+</tr>
+<tr>
+<td><code>y1G</code></td>
+<td align="center">复制光标所在行到第一行的所有数据</td>
+</tr>
+<tr>
+<td><code>yG</code></td>
+<td align="center">复制光标所在行到最后一行的所有数据</td>
+</tr>
+<tr>
+<td><code>ynj</code>(n代表数字)</td>
+<td align="center">复制光标所在行向下n+1行</td>
+</tr>
+<tr>
+<td><code>y^</code></td>
+<td align="center">复制至行首</td>
+</tr>
+<tr>
+<td><code>y0</code></td>
+<td align="center">复制至行首</td>
+</tr>
+<tr>
+<td><code>y$</code></td>
+<td align="center">复制至行尾</td>
+</tr>
+<tr>
+<td><code>nyy</code></td>
+<td align="center">复制光标所在行n行</td>
+</tr>
+</tbody></table>
+<h3 id="选中文本进行复制"><a href="#选中文本进行复制" class="headerlink" title="选中文本进行复制"></a>选中文本进行复制</h3><p>要选中内容进行复制，先在命令模式下按  <code>v</code> 进入 可视模式(Visual Mode)，然后用方向键 或 <code>h</code>,<code>j</code>,<code>k</code>,<code>l</code> 选择文本，再按 <code>y</code> 进行复制。</p>
+<h2 id="剪切文本"><a href="#剪切文本" class="headerlink" title="剪切文本"></a>剪切文本</h2><h3 id="常用剪切命令"><a href="#常用剪切命令" class="headerlink" title="常用剪切命令"></a>常用剪切命令</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>dd</code></td>
+<td align="center">剪切游标所在行整行</td>
+</tr>
+<tr>
+<td><code>d^</code></td>
+<td align="center">剪切至行首</td>
+</tr>
+<tr>
+<td><code>d0</code></td>
+<td align="center">剪切至行首</td>
+</tr>
+<tr>
+<td><code>d$</code></td>
+<td align="center">剪切至行尾</td>
+</tr>
+<tr>
+<td><code>ndd</code></td>
+<td align="center">剪切光标所在行n行</td>
+</tr>
+</tbody></table>
+<h3 id="选中文本进行剪切"><a href="#选中文本进行剪切" class="headerlink" title="选中文本进行剪切"></a>选中文本进行剪切</h3><p>要选中内容进行剪切，先在命令模式下按  <code>v</code> 进入 可视模式(Visual Mode)，然后用方向键 或 <code>h</code>,<code>j</code>,<code>k</code>,<code>l</code> 选择文本，再按 <code>d</code> 进行剪切。</p>
+<h2 id="粘贴文本"><a href="#粘贴文本" class="headerlink" title="粘贴文本"></a>粘贴文本</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>p</code></td>
+<td align="center">粘贴在光标的下一行</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td align="center">粘贴在光标的上一行</td>
+</tr>
+<tr>
+<td><code>np</code></td>
+<td align="center">粘贴在光标的下一行n次</td>
+</tr>
+</tbody></table>
+<h2 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>u</code></td>
+<td align="center">撤销上一步操作</td>
+</tr>
+<tr>
+<td><code>ctrl+r</code></td>
+<td align="center">恢复撤销的操作</td>
+</tr>
+</tbody></table>
+<h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><p>普通模式下 输入<code>/搜索内容</code> 搜索内容 通过<code>n</code>查找下一个通过<code>N</code>查找上一个</p>
+<h2 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h2><p>命令行模式下 输入 `s/原来的内容/要替换的内容/</p>
+<pre><code>:s/abc/xyz/
+# 把abc替换成xyz</code></pre><blockquote>
+<p>只会替换第一个匹配的字符</p>
+</blockquote>
+<p>命令行模式下 输入 `s/原来的内容/要替换的内容/g</p>
+<pre><code>:s/abc/xyz/g
+# 把abc替换成xyz</code></pre><blockquote>
+<p>只会替换当前行匹配的字符</p>
+</blockquote>
+<p>命令行模式下 输入 <code>n,m s/原来的内容/要替换的内容/g</code> (n,m) 从第n行到第m行`</p>
+<pre><code>:1,5 s/abc/xyz/g
+# 把第一到第五行的abc替换成xyz
 
+:1,$ s/abc/xyz/g
+# 把第一到最后一行的abc替换成xyz</code></pre><p>命令行模式下 输入 `% s/原来的内容/要替换的内容/g </p>
+<pre><code>:% s/abc/xyz/g
+# 将全部的abc替换成xyz</code></pre>
             </div>
             <hr/>
 
@@ -725,7 +997,13 @@ dwareminkrainhee</code></pre><p>按<code>Esc</code>进入普通模式，在该�
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            MarkDown 语法Markdown 标题1、使用 = 和 - 标记一级和二级标题我展示的是一级标题
+=================
+
+我展示的是二级标题
+-----------------显示效果
+
+我展示的是一级标题我展示的是二级
                         
                     </div>
                     <div class="publish-info">
@@ -734,11 +1012,23 @@ dwareminkrainhee</code></pre><p>按<code>Esc</code>进入普通模式，在该�
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            InkRainHee Blog
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/markdown/" class="post-category" target="_blank">
+                                    markdown
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/markdown/" target="_blank">
+                        <span class="chip bg-color">markdown</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -913,7 +1203,7 @@ dwareminkrainhee</code></pre><p>按<code>Esc</code>进入普通模式，在该�
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">8.4k</span>
+                <span class="white-color">10.9k</span>
             
 
             
