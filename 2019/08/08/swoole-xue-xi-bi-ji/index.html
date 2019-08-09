@@ -417,14 +417,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        1.4k
+                        1.6k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        6 分
+                        7 分
                     </div>
                     
                 
@@ -452,9 +452,8 @@
 <p>cd 进入刚才解压好的文件夹</p>
 <p>通过./configure 来编译php </p>
 <blockquote>
-<p>前提 centos环境有gcc工具</p>
+<p>configure 参数</p>
 </blockquote>
-<p>没有的话 通过yum install gcc </p>
 <p>–prefix=/opt/php //指定 php 安装目录<br>–with-apxs2=/usr/local/apache/bin/apxs //整合Apache<br>–with-config-file-path=/opt/php/etc //指定php.ini位置<br>–with-config-file-scan-dir=/opt/php/etc/php.d //指定额外拓展配置归放处文件夹<br>–enable-safe-mode //打开安全模式<br>–enable-ftp //打开ftp的支持<br>–enable-zip //打开对zip的支持<br>–with-bz2 //打开对bz2文件的支持<br>–with-jpeg-dir //打开对jpeg图片的支持<br>–with-png-dir //打开对png图片的支持<br>–with-freetype-dir //打开对freetype字体库的支持<br>–without-iconv //关闭iconv函数，各种字符集间的转换<br>–with-libXML-dir //打开libxml2库的支持<br>–with-XMLrpc //打开xml-rpc的c语言<br>–with-zlib-dir //打开zlib库的支持<br>–with-gd //打开gd库的支持<br>–enable-gd-native-ttf //支持TrueType字符串函数库<br>–with-curl //打开curl浏览工具的支持<br>–with-curlwrappers //运用curl工具打开url流<br>–with-ttf //打开freetype1.*的支持，可以不加了<br>–with-xsl //打开XSLT 文件支持，扩展了libXML2库 ，需要libxslt软件<br>–with-gettext //打开gnu 的gettext 支持，编码库用到<br>–with-pear //打开pear命令的支持，PHP扩展用的<br>–enable-calendar //打开日历扩展功能<br>–enable-mbstring //多字节，字符串的支持<br>–enable-bcmath //精度计算，解决蛋疼的数字运算精度问题<br>–enable-sockets //打开 sockets 支持<br>–enable-exif //图片的元数据支持<br>–enable-magic-quotes //魔术引用的支持<br>–disable-rpath //关闭额外的运行库文件<br>–disable-debug //关闭调试模式<br>–with-ldap-dir //轻量目录访问协议</p>
 <p>选择两个就可以了</p>
 <p>./configure –prefix=/opt/work/softpackage/php7.2 –with-config-file-path=/opt/work/softpackage/php7.2/etc/php_ini_file/</p>
@@ -518,6 +517,14 @@ Installing header files:          /opt/work/softpackage/php7.2/include/php/
 <pre><code>(Not all processes could be identified, non-owned process info
  will not be shown, you would have to be root to see it all.)
 tcp        0      0 0.0.0.0:9501            0.0.0.0:*               LISTEN      121984/php  </code></pre><p>可以看到9501端口已经开启</p>
+<h4 id="创建php文件-编写swoole服务"><a href="#创建php文件-编写swoole服务" class="headerlink" title="创建php文件 编写swoole服务"></a>创建php文件 编写swoole服务</h4><h5 id="TCP-服务器"><a href="#TCP-服务器" class="headerlink" title="TCP 服务器"></a>TCP 服务器</h5><p>创建TCP服务器</p>
+<pre><code>$serv = new swoole_server(&quot;127.0.0.1&quot;,9501);</code></pre><h6 id="swoole-server函数介绍"><a href="#swoole-server函数介绍" class="headerlink" title="swoole_server函数介绍"></a>swoole_server函数介绍</h6><p>参考网址 <a href="https://wiki.swoole.com/wiki/page/14.html" target="_blank" rel="noopener">https://wiki.swoole.com/wiki/page/14.html</a></p>
+<pre><code>$serv = new Server(string $host, int $port = 0, int $mode = SWOOLE_PROCESS,int $sock_type = SWOOLE_SOCK_TCP);
+</code></pre><p>参数 ：<br>$host参数用来指定监听的ip地址，如127.0.0.1，或者外网地址，或者0.0.0.0监听全部地址<br>    IPv4使用 127.0.0.1表示监听本机，0.0.0.0表示监听所有地址<br>    IPv6使用::1表示监听本机，:: (相当于0:0:0:0:0:0:0:0) 表示监听所有地址</p>
+<p>$port监听的端口，如9501<br>    如果$sock_type为UnixSocket Stream/Dgram，此参数将被忽略<br>    监听小于1024端口需要root权限<br>    如果此端口被占用server-&gt;start时会失败</p>
+<p>$mode运行的模式<br>    SWOOLE_PROCESS多进程模式（默认）<br>    SWOOLE_BASE基本模式</p>
+<p>$sock_type指定Socket的类型，支持TCP、UDP、TCP6、UDP6、UnixSocket Stream/Dgram 6种</p>
+<p>使用$sock_type | SWOOLE_SSL可以启用SSL隧道加密。启用SSL后必须配置ssl_key_file和ssl_cert_file</p>
 
             </div>
             <hr/>
@@ -940,7 +947,7 @@ tcp        0      0 0.0.0.0:9501            0.0.0.0:*               LISTEN      
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">7.3k</span>
+                <span class="white-color">7.6k</span>
             
 
             
